@@ -1,1 +1,24 @@
-
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vnetName": {
+      "value": "myVNet"
+    },
+    "vnetAddressPrefix": {
+      "value": "10.0.0.0/16"
+    },
+    "subnetName": {
+      "value": "mySubnet"
+    },
+    "subnetPrefix": {
+      "value": "10.0.1.0/24"
+    },
+    "storageAccountName": {
+      "value": "mystorageacct202507"  // must be globally unique & lowercase
+    },
+    "location": {
+      "value": "eastus"
+    }
+  }
+}
